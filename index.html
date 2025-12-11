@@ -4,14 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kyaw ThantZin — Developer</title>
-  <meta name="description" content="Developer portfolio of Kyaw ThantZin — full‑stack developer, DevOps, AI enthusiast." />
+  <meta name="description" content="Developer portfolio of Kyaw ThantZin — full-stack developer, DevOps, AI enthusiast." />
   <link rel="canonical" href="https://kyawthantzin.me/" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7c3aed}
     *{box-sizing:border-box}
     html,body{height:100%}
-    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;color:#e6eef6;background:linear-gradient(180deg,#071428 0%, #0b1220 100%);-webkit-font-smoothing:antialiased}
+    body{
+      margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;
+      color:#e6eef6;
+      background:linear-gradient(180deg,#071428 0%, #0b1220 100%);
+      -webkit-font-smoothing:antialiased
+    }
     .container{max-width:980px;margin:36px auto;padding:28px}
     header{display:flex;gap:20px;align-items:center}
     .avatar{width:108px;height:108px;border-radius:18px;overflow:hidden;flex:0 0 108px;background:linear-gradient(135deg,#1f2937,#111827);display:flex;align-items:center;justify-content:center}
@@ -24,15 +29,15 @@
     main{margin-top:26px;display:grid;grid-template-columns:1fr 340px;gap:22px}
     .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
     section h2{margin:0 0 12px;font-size:16px}
-    .about{color:var(--muted);line-height:1.5}
+    .about{color:var(--muted);line-height:1.6;font-size:15px}
     .skills{display:flex;flex-wrap:wrap;gap:10px}
-    .skill{background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px;font-weight:600;border:1px solid rgba(255,255,255,0.02)}
+    .skill{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px;font-weight:600;border:1px solid rgba(255,255,255,0.02)}
+    .skill svg{width:16px;height:16px}
     .projects{display:grid;grid-template-columns:1fr;gap:12px}
     .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.02)}
     .project a{font-weight:700;color:#e6eeff;text-decoration:none}
     .meta{color:var(--muted);font-size:13px}
     .sidebar .card + .card{margin-top:14px}
-    .contact a{display:inline-block;margin-top:8px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#4f46e5);color:white;text-decoration:none;font-weight:700}
     footer{text-align:center;color:var(--muted);margin-top:26px;font-size:13px}
     @media (max-width:900px){main{grid-template-columns:1fr}header{flex-direction:row} .container{margin:20px;padding:18px} .avatar{width:88px;height:88px} }
   </style>
@@ -41,12 +46,11 @@
   <div class="container">
     <header>
       <div class="avatar card">
-        <!-- Replace with your avatar image -->
         <img src="https://kyawthantzin.me/assets/avatar.jpg" alt="Kyaw ThantZin" onerror="this.style.display='none'">
       </div>
       <div class="hero">
-        <h1>Kyaw ThantZin — Full‑Stack Developer</h1>
-        <p class="lead">Building web apps, APIs and deployment workflows. Laravel, Next.js, Docker, CI/CD and cloud infrastructure.</p>
+        <h1>Kyaw ThantZin — Full-Stack Developer</h1>
+        <p class="lead">Building stable APIs, scalable deployments, and automation systems. Laravel, Next.js, Docker, DevOps & cloud infrastructure.</p>
         <div class="badges">
           <div class="badge">Laravel</div>
           <div class="badge">Next.js</div>
@@ -61,70 +65,86 @@
       <div>
         <section class="card">
           <h2>About</h2>
-          <p class="about">Hi — I’m Kyaw. I focus on building maintainable web applications with clean APIs and automated deployment. I enjoy solving infrastructure problems and creating reliable pipelines for continuous delivery.</p>
+          <p class="about">
+            I am a full-stack developer with a strong focus on back-end architecture, API development, cloud
+            infrastructure, and deployment automation. My work involves designing scalable systems using Laravel,
+            building modern front-ends with Next.js, and implementing DevOps workflows using Docker, CI/CD pipelines,
+            and AWS-based services.<br><br>
+            I enjoy solving complex problems, optimizing deployments, and supporting real-world engineering teams by
+            creating reliable, maintainable, production-ready software.
+          </p>
         </section>
 
         <section class="card" style="margin-top:14px">
           <h2>Featured projects</h2>
           <div class="projects">
-            <article class="project">
-              <div><a href="#">NebulaTask — Workflow Automation Tool</a></div>
-              <div class="meta">Task orchestration, API triggers, cloud‑based worker system</div>
-            </article>
-            <article class="project">
-              <div><a href="#">AtlasBoard — Developer Dashboard</a></div>
-              <div class="meta">Next.js dashboard, analytics widgets, dark‑mode UI</div>
-            </article>
-            <article class="project">
-              <div><a href="#">PulseAPI — Monitoring & Alerts</a></div>
-              <div class="meta">API uptime tracker, alert engine, Grafana‑style charts</div>
-            </article>
-            <article class="project">
-              <div><a href="#">SkyTrail — Travel Log Platform</a></div>
-              <div class="meta">Full‑stack journaling app with image uploads and maps</div>
-            </article>
-            <article class="project">
-              <div><a href="#">ForgeDocs — Markdown Knowledge Base</a></div>
-              <div class="meta">Static documentation builder with search</div>
-            </article>
-            <article class="project">
-              <div><a href="#">QuantumCart — E‑commerce Mini Engine</a></div>
-              <div class="meta">Cart system, product variants, Laravel backend</div>
-            </article>
+            <article class="project"><div><a href="#">NebulaTask — Workflow Automation Tool</a></div><div class="meta">Task orchestration, API triggers, cloud worker pipelines</div></article>
+            <article class="project"><div><a href="#">AtlasBoard — Developer Dashboard</a></div><div class="meta">Next.js analytics dashboard with widgets & insights</div></article>
+            <article class="project"><div><a href="#">PulseAPI — Monitoring & Alerts</a></div><div class="meta">Uptime checks, notifications, Grafana-style charts</div></article>
+            <article class="project"><div><a href="#">SkyTrail — Travel Log Platform</a></div><div class="meta">User journaling, map views, full-stack application</div></article>
+            <article class="project"><div><a href="#">ForgeDocs — Markdown Knowledge Base</a></div><div class="meta">Documentation system with real-time search</div></article>
+            <article class="project"><div><a href="#">QuantumCart — E-commerce Mini Engine</a></div><div class="meta">Laravel shop engine with variants & cart flows</div></article>
+            <article class="project"><div><a href="#">DevSyncCI — CI/CD Workflow Generator</a></div><div class="meta">Auto-generate CI pipelines for GitHub & GitLab</div></article>
+            <article class="project"><div><a href="#">AeroQueue — Distributed Queue Engine</a></div><div class="meta">Message queues, workers, retry engine, monitoring</div></article>
           </div>
         </section>
 
         <section class="card" style="margin-top:14px">
-          <h2>Experience &amp; Work</h2>
+          <h2>Experience & Work</h2>
           <ul style="margin:0;padding-left:18px;color:var(--muted)">
-            <li>Senior developer — focused on PHP & JavaScript stacks</li>
-            <li>DevOps: Docker, CI/CD (CircleCI), AWS</li>
-            <li>Building multi‑tenant RAG and AI tooling</li>
+            <li>Full-stack development — PHP, Laravel, JavaScript, React/Next.js</li>
+            <li>DevOps — Docker, CI/CD (GitHub Actions, CircleCI), AWS deployment</li>
+            <li>Cloud storage & infrastructure — AWS S3, MinIO, ECS-style patterns</li>
+            <li>Building multi-tenant RAG + AI workflow systems</li>
           </ul>
         </section>
-
       </div>
 
       <aside class="sidebar">
         <div class="card">
-          <h2>Skills</h2>
+          <h2>Programming Languages</h2>
           <div class="skills">
-            <div class="skill">PHP</div>
-            <div class="skill">Laravel</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Next.js</div>
+            <div class="skill">
+              <!-- PHP icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 3.582 0 8s5.37 8 12 8 12-3.582 12-8-5.37-8-12-8zm-2.403 11.564h-1.63l-.279 1.436H5.27l1.65-6.275h2.164c1.086 0 1.802.572 1.802 1.432 0 1.045-.834 1.75-1.922 1.75hz"/></svg>
+              PHP
+            </div>
+
+            <div class="skill">
+              <!-- Laravel icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M3.5 4.5l7 3.5v8.5l-7-3.5zM10.5 8l7-3.5v8.5l-7 3.5zM3.5 13l7 3.5 7-3.5"/></svg>
+              Laravel
+            </div>
+
+            <div class="skill">
+              <!-- JS icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/><path fill="#000" d="M8 17l1-2c.6.4 1.2.7 2 .7.7 0 1-.3 1-.8 0-.5-.4-.8-1.3-1.2l-.6-.2C8.9 12.7 8 11.9 8 10.5 8 9 9.1 8 11 8c.8 0 1.5.2 2.2.6l-.9 2c-.5-.3-1-.5-1.4-.5-.5 0-.8.2-.8.6s.3.7 1.2 1l.5.2c1.6.6 2.5 1.4 2.5 2.9 0 1.7-1.3 2.7-3.2 2.7-1 0-2-.3-2.8-.8z"/></svg>
+              JavaScript
+            </div>
+
+            <div class="skill">
+              <!-- Next.js icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 4.92 0 11c0 4.85 3.438 9.094 8.207 10.51.6.105.793-.258.793-.573v-2.02c-3.338.74-4.04-1.61-4.04-1.61-.545-1.292-1.332-1.637-1.332-1.637-1.087-.733.083-.718.083-.718 1.205.083 1.84 1.215 1.84 1.215 1.07 1.793 2.807 1.275 3.492.975.108-.8.417-1.275.76-1.57-2.665-.292-5.466-1.367-5.466-6.097 0-1.292.462-2.355 1.23-3.185-.123-.293-.535-1.51.117-3.152 0 0 1.008-.318 3.3 1.215.96-.258 1.98-.385 3-.385 1.02 0 2.04.127 3 .385 2.292-1.533 3.3-1.215 3.3-1.215.652 1.642.24 2.86.12 3.152.768.83 1.23 1.893 1.23 3.185 0 4.745-2.807 5.8-5.478 6.087.426.36.81 1.088.81 2.215v3.27c0 .315.192.69.798.573C20.565 20.093 24 15.85 24 11c0-6.08-5.37-11-12-11z"/></svg>
+              Next.js
+            </div>
+
             <div class="skill">Docker</div>
             <div class="skill">AWS</div>
-            <div class="skill">CI/CD</div>
-            <div class="skill">SQL</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">PostgreSQL</div>
+            <div class="skill">Redis</div>
+            <div class="skill">TailwindCSS</div>
+            <div class="skill">Git / GitHub</div>
           </div>
         </div>
 
         <div class="card">
           <h2>Contact</h2>
           <div class="meta">Location: Myanmar</div>
-          <div class="meta">Email: <a href="mailto:info@heydayagriculture.com">info@heydayagriculture.com</a></div>
-          <div class="contact"><a href="mailto:info@heydayagriculture.com">Email me</a></div>
+          <div class="meta">Email: 
+            <a href="mailto:kyawthantzamt@gmail.com">kyawthantzamt@gmail.com</a>
+          </div>
+          <div class="meta">Phone: 09251300893</div>
         </div>
 
         <div class="card">
@@ -139,7 +159,7 @@
     </main>
 
     <footer>
-      © <span id="year"></span> Kyaw ThantZin — <span class="meta">Built with HTML &amp; CSS • Hosted on GitHub Pages</span>
+      © <span id="year"></span> Kyaw ThantZin — <span class="meta">Built with HTML & CSS • Hosted on GitHub Pages</span>
     </footer>
   </div>
 
