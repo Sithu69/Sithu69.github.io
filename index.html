@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kyaw ThantZin — Developer</title>
+  <meta name="description" content="Developer portfolio of Kyaw ThantZin — full‑stack developer, DevOps, AI enthusiast." />
+  <link rel="canonical" href="https://kyawthantzin.me/" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7c3aed}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;color:#e6eef6;background:linear-gradient(180deg,#071428 0%, #0b1220 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:980px;margin:36px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:108px;height:108px;border-radius:18px;overflow:hidden;flex:0 0 108px;background:linear-gradient(135deg,#1f2937,#111827);display:flex;align-items:center;justify-content:center}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    .hero{flex:1}
+    h1{margin:0;font-size:28px;letter-spacing:-0.02em}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .badges{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+    .badge{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px;color:#d8e6ff;border:1px solid rgba(255,255,255,0.03)}
+    main{margin-top:26px;display:grid;grid-template-columns:1fr 340px;gap:22px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    section h2{margin:0 0 12px;font-size:16px}
+    .about{color:var(--muted);line-height:1.5}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px;font-weight:600;border:1px solid rgba(255,255,255,0.02)}
+    .projects{display:grid;grid-template-columns:1fr;gap:12px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.02)}
+    .project a{font-weight:700;color:#e6eeff;text-decoration:none}
+    .meta{color:var(--muted);font-size:13px}
+    .sidebar .card + .card{margin-top:14px}
+    .contact a{display:inline-block;margin-top:8px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#4f46e5);color:white;text-decoration:none;font-weight:700}
+    footer{text-align:center;color:var(--muted);margin-top:26px;font-size:13px}
+    @media (max-width:900px){main{grid-template-columns:1fr}header{flex-direction:row} .container{margin:20px;padding:18px} .avatar{width:88px;height:88px} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar card">
+        <!-- Replace with your avatar image -->
+        <img src="https://kyawthantzin.me/assets/avatar.jpg" alt="Kyaw ThantZin" onerror="this.style.display='none'">
+      </div>
+      <div class="hero">
+        <h1>Kyaw ThantZin — Full‑Stack Developer</h1>
+        <p class="lead">Building web apps, APIs and deployment workflows. Laravel, Next.js, Docker, CI/CD and cloud infrastructure.</p>
+        <div class="badges">
+          <div class="badge">Laravel</div>
+          <div class="badge">Next.js</div>
+          <div class="badge">Docker</div>
+          <div class="badge">AWS / MinIO</div>
+          <div class="badge">CI/CD</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <section class="card">
+          <h2>About</h2>
+          <p class="about">Hi — I’m Kyaw. I focus on building maintainable web applications with clean APIs and automated deployment. I enjoy solving infrastructure problems and creating reliable pipelines for continuous delivery.</p>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h2>Featured projects</h2>
+          <div class="projects">
+            <article class="project">
+              <div><a href="#">NebulaTask — Workflow Automation Tool</a></div>
+              <div class="meta">Task orchestration, API triggers, cloud‑based worker system</div>
+            </article>
+            <article class="project">
+              <div><a href="#">AtlasBoard — Developer Dashboard</a></div>
+              <div class="meta">Next.js dashboard, analytics widgets, dark‑mode UI</div>
+            </article>
+            <article class="project">
+              <div><a href="#">PulseAPI — Monitoring & Alerts</a></div>
+              <div class="meta">API uptime tracker, alert engine, Grafana‑style charts</div>
+            </article>
+            <article class="project">
+              <div><a href="#">SkyTrail — Travel Log Platform</a></div>
+              <div class="meta">Full‑stack journaling app with image uploads and maps</div>
+            </article>
+            <article class="project">
+              <div><a href="#">ForgeDocs — Markdown Knowledge Base</a></div>
+              <div class="meta">Static documentation builder with search</div>
+            </article>
+            <article class="project">
+              <div><a href="#">QuantumCart — E‑commerce Mini Engine</a></div>
+              <div class="meta">Cart system, product variants, Laravel backend</div>
+            </article>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h2>Experience &amp; Work</h2>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Senior developer — focused on PHP & JavaScript stacks</li>
+            <li>DevOps: Docker, CI/CD (CircleCI), AWS</li>
+            <li>Building multi‑tenant RAG and AI tooling</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <aside class="sidebar">
+        <div class="card">
+          <h2>Skills</h2>
+          <div class="skills">
+            <div class="skill">PHP</div>
+            <div class="skill">Laravel</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Next.js</div>
+            <div class="skill">Docker</div>
+            <div class="skill">AWS</div>
+            <div class="skill">CI/CD</div>
+            <div class="skill">SQL</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Contact</h2>
+          <div class="meta">Location: Myanmar</div>
+          <div class="meta">Email: <a href="mailto:info@heydayagriculture.com">info@heydayagriculture.com</a></div>
+          <div class="contact"><a href="mailto:info@heydayagriculture.com">Email me</a></div>
+        </div>
+
+        <div class="card">
+          <h2>Social</h2>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <a class="badge" href="https://github.com/kyawthantzin" target="_blank">GitHub</a>
+            <a class="badge" href="https://linkedin.com/in/kyawthantzin" target="_blank">LinkedIn</a>
+            <a class="badge" href="https://kyawthantzin.me/" target="_blank">Website</a>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Kyaw ThantZin — <span class="meta">Built with HTML &amp; CSS • Hosted on GitHub Pages</span>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
